@@ -1,4 +1,4 @@
-# dtlabs
+# Dashboard
 
 ## Instruções de Instalação e Execução
 
@@ -10,12 +10,12 @@ Antes de começar, certifique-se de ter o Node.js e o npm (Node Package Manager)
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/dtlabs.git
+   git clone https://github.com/seu-usuario/shopeedashboard.git
    ```
 
 2. **Navegue até o diretório do projeto:**
     ```bash
-    cd dtlabs
+    cd shopeedashboard
     ```
 
 3. **Instale as dependências:**
@@ -29,16 +29,11 @@ Antes de começar, certifique-se de ter o Node.js e o npm (Node Package Manager)
 
 4.5 **Usando Docker:**
     ```bash
-     docker build -t dtlabs .
+     docker build -t shopeedashboard .
      docker run -p 3000:3000 --name dtlabs dtlabs
      ```
 5. **Acesse a aplicação:**
     Abra o seu navegador e vá até http://localhost:3000 para ver a aplicação em execução.
-
-### Experiência de Criação do Projeto
-    Primeiramente, gostaria de agradecer a toda equipe da dtlabs por me conceder a oportunidade de continuar neste processo que, independente do resultado, foi substancial para meus estudos futuros.
-
-    No pontapé inicial, ao ler a documentação do desafio em destaque, visualizei as competências essenciais a serem avaliadas pela equipe e fiz a leitura diversas vezes do case enquanto olhava o Figma.
 
 ### Configuração do Ambiente
     A configuração inicial do ambiente foi bastante tranquila, graças ao Create React App, uma ferramenta fornecida pela equipe do React para configurar novos projetos rapidamente. Com apenas alguns comandos, foi possível configurar toda a estrutura do projeto, incluindo as dependências essenciais, como também a construção das pastas.
