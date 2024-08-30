@@ -1,0 +1,14 @@
+.chart-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 63rem;
+    padding: 2rem;
+    &::-webkit-scrollbar {
+        opacity: 0;
+    }
+   
+}

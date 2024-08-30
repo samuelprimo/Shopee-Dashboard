@@ -1,0 +1,10 @@
+node_modules
+build
+dist
+.git
+npm-debug.log
+.coverage
+.env
+.aws
+.pnp
+.pnp.js

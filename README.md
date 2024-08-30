@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# dtlabs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instruções de Instalação e Execução
 
-## Available Scripts
+### Pré-requisitos
 
-In the project directory, you can run:
+Antes de começar, certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em sua máquina. Você pode baixá-los e instalá-los a partir do [site oficial do Node.js](https://nodejs.org/).
 
-### `npm start`
+### Passos para Iniciar a Aplicação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/dtlabs.git
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Navegue até o diretório do projeto:**
+    ```bash
+    cd dtlabs
+    ```
 
-### `npm test`
+3. **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+4. **Inicie a aplicação:**
+    ```bash
+     npm start
+     ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.5 **Usando Docker:**
+    ```bash
+     docker build -t dtlabs .
+     docker run -p 3000:3000 --name dtlabs dtlabs
+     ```
+5. **Acesse a aplicação:**
+    Abra o seu navegador e vá até http://localhost:3000 para ver a aplicação em execução.
 
-### `npm run build`
+### Experiência de Criação do Projeto
+    Primeiramente, gostaria de agradecer a toda equipe da dtlabs por me conceder a oportunidade de continuar neste processo que, independente do resultado, foi substancial para meus estudos futuros.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    No pontapé inicial, ao ler a documentação do desafio em destaque, visualizei as competências essenciais a serem avaliadas pela equipe e fiz a leitura diversas vezes do case enquanto olhava o Figma.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Configuração do Ambiente
+    A configuração inicial do ambiente foi bastante tranquila, graças ao Create React App, uma ferramenta fornecida pela equipe do React para configurar novos projetos rapidamente. Com apenas alguns comandos, foi possível configurar toda a estrutura do projeto, incluindo as dependências essenciais, como também a construção das pastas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Desenvolvimento
+    Durante o desenvolvimento desse caso técnico, focamos em criar componentes reutilizáveis e manter um código limpo e organizado. Utilizei uma biblioteca de gráficos e ferramentas que se integraram bem com o React, como o React Router para navegação e o Axios para requisições HTTP.
 
-### `npm run eject`
+    Fiz o start nas telas do LOGIN e o NotFound por serem as mais simples e singulares (não precisariam ser um componente de padronização). Em contrapartida, no Sidebar fiz com que o mesmo fosse um padrão em todas as páginas, ele aloca-se na pasta de components, onde abriga também textos, selects, gráficos e a data. 
+    Após isso, iniciei o desenvolvimento do PERFIL, onde também não encontrei muitos problemas em sua estilização, exceto alinhar corretamente as labels, mas por fim deu certo. 
+    As telas do DASHBOARD e USUÁRIOS foram utilizados na mesma estilização do table, no entanto não foi possível haver 100% de fidelidade ao case do figma. Isso se justifica no momento em que os dados do back-end foram tratados, que por sua vez tomou conta de boa parte do tempo, assim não foi possível que fosse ajustado algumas margins. 
+    Chegando na tela de GRÁFICOS, foi importada a biblioteca Chart.js onde abriga os gráficos, no entanto, a sua confecção se tornou um pouco mais complicada por se tratar de um canva.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Desafios Enfrentados
+    Tratar os dados do back-end sem dúvidas foi o meu maior desafio. Ligar os dados das vendas ao gráfico e faze-lo fucnionar corretamente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Conclusão
+    A experiência de fazer esse caso técnico que apesar de ser um processo seletivo, foi extremamente enriquecedora. Além de reforçar conhecimentos em React e JavaScript, também proporcionou uma visão mais ampla sobre o processo de desenvolvimento de aplicações web modernas. 

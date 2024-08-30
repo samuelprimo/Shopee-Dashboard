@@ -1,0 +1,14 @@
+.chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44rem;
+    height: 23.4rem;
+    padding: 0.5rem 1.5rem 3.5rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+
+    & > h1::first-letter {
+        text-transform: capitalize;
+    }
+}
