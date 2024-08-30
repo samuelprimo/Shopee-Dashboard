@@ -30,7 +30,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm (Node Package Manager)
 4.5 **Usando Docker:**
     ```bash
      docker build -t shopeedashboard .
-     docker run -p 3000:3000 --name dtlabs dtlabs
+     docker run -p 3000:3000 --name shopeedashboard shopeedashboard
      ```
 5. **Acesse a aplicação:**
     Abra o seu navegador e vá até http://localhost:3000 para ver a aplicação em execução.
